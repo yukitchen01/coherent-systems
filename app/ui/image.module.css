@@ -1,0 +1,36 @@
+/* app/ui/ImageWithText.module.css */
+.container {
+    position: relative; /* Position relative to parent */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 400px; /* Set height as needed */
+    overflow: hidden; /* Hide overflow */
+  }
+
+  .container h1 {
+    font-weight: bold;
+  }
+  
+  .image {
+    width: 100%; /* Make the image responsive */
+    height: 100%; /* Make the image responsive */
+    object-fit: cover; /* Cover the area without stretching */
+  }
+  
+  .text {
+    position: absolute; /* Position absolute for overlay */
+    color: white; /* Text color */
+    font-size: 2rem; /* Initial font size */
+    text-align: center; /* Center text */
+    opacity: 0; /* Start invisible */
+    transform: scale(0.9); /* Start small */
+    transition: opacity 1500ms ease-in-out, transform 1500ms ease-in-out; /* Transition effects */
+  }
+  
+  .expand {
+    opacity: 1; /* Fade in */
+    transform: scale(1); /* Expand to original size */
+  }
+  
+  

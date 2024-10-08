@@ -1,0 +1,28 @@
+.footer {
+    background-color: rgb(31 41 55); /* Footer background color */
+    color: white; /* Text color */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center text */
+    position: relative; /* Ensure positioning is relative */
+  }
+  
+  .container {
+    max-width: 1200px; /* Maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Side padding */
+  }
+  
+  .socialLinks {
+    margin: 10px 0; /* Margin for social links */
+  }
+  
+  .socialLinks a {
+    color: white; /* Link color */
+    margin: 0 10px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .socialLinks a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  

@@ -1,33 +1,24 @@
-import AcmeLogo from '@/app/ui/acme-logo';
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
-import Link from 'next/link';
+import ImageWithText from './ui/imageAnimation';
+import Styles from './top.module.css';
 
-export default function Page() {
+const HomePage = () => {
   return (
-    <main className="flex min-h-screen flex-col p-6">
-      <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
-        {/* <AcmeLogo /> */}
+    <div>
+      <ImageWithText />
+      <div className={Styles.Overview}>
+        <h2>Our Mission</h2>
+        <p>
+        宇宙開発の発展と共に、多くの人工衛星が打ち上げられる一方で、人工衛星の残骸も急速に増加しています。
+        これらの破片は、秒速10km程度で衝突し、その衝撃でさらに多くのデブリが発生しています。
+        これは、ケスラーシンドロームとして知られています。小型デブリ(10cm以下)は、地球からの観測が困難であり、
+        それが衛星に弾丸のような速度で衝突すると衛星の機能を奪ってしまいます。宇宙開発の裏側で起こっている大きな問題です。
+        また、石油エネルギーに依存する日本において、新たなエネルギー源としてマグネシウムから水素を発生させ、
+        残骸として残った酸化マグネシウムを光の力で再生する技術開発に挑戦しています。私たちコヒーレントシステムズは、
+        自社の強みであるレーザー科学や情報工学を駆使し、長期的な視野で戦略を構築し、これらの社会的課題の解決に取り組んでまいります。
+        </p>
       </div>
-      <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
-        <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
-          <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`}>
-            <strong>Welcome to Acme.</strong> This is the example for the{' '}
-            <a href="https://nextjs.org/learn/" className="text-blue-500">
-              Next.js Learn Course
-            </a>
-            , brought to you by Vercel.
-          </p>
-          <Link
-            href="/login"
-            className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
-          >
-            <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
-          </Link>
-        </div>
-        <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-          {/* Add Hero Images Here */}
-        </div>
-      </div>
-    </main>
+    </div>
   );
-}
+};
+
+export default HomePage;

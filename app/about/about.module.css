@@ -76,7 +76,7 @@
   
   .title {
     flex: 1; /* タイトルカラムを細くする */
-    text-align: right; /* タイトルを右寄せ */
+    text-align: left; /* タイトルを右寄せ */
     padding-right: 10px; /* タイトルと内容の間に余白を追加 */
     font-weight: bold;
     font-size: 1.1rem;

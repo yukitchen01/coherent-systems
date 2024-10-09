@@ -8,7 +8,7 @@ export default function About() {
     <Head>
       <title>株式会社コヒーレントシステムズ - 会社概要</title>
           <meta name="description" content="株式会社コヒーレントシステムズの会社概要とメンバー紹介" />
-          <meta name="keywords" content="コヒーレント, レーザープラズマ, 再生可能エネルギー, 宇宙デブリ, Nariaki Uchida, 内田成明, Kiyozumi Takeuchi, 竹内清澄" />
+          <meta name="keywords" content="コヒーレント, レーザープラズマ, 再生可能エネルギー, 宇宙デブリ, Shigeaki Uchida, 内田成明, Kiyozumi Takeuchi, 竹内清澄" />
           <meta property="og:title" content="株式会社コヒーレントシステムズ - 会社概要" />
           <meta property="og:description" content="株式会社コヒーレントシステムズの会社概要、代表挨拶、研究内容などの詳細情報。" />
     </Head>
@@ -47,7 +47,7 @@ export default function About() {
             className={styles.cardImage}
           />
           <p>取締役 CTO</p>
-          <h2>内田 成明 (Nariaki Uchida)</h2>
+          <h2>内田 成明 (Shigeaki Uchida)</h2>
           <p>大阪大学 工学部・工学研究科修了後、米国ロチェスター大学にて博士号取得。
             レーザー技術総合研究所主任研究員、東京工業大学特任教授、東京大学客員教授、光産業創成大学院大学
             客員教授、大阪大学招聘教授等を歴任。

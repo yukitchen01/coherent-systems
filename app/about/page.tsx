@@ -8,13 +8,13 @@ export default function About() {
     <Head>
       <title>株式会社コヒーレントシステムズ - 会社概要</title>
           <meta name="description" content="株式会社コヒーレントシステムズの会社概要とメンバー紹介" />
-          <meta name="keywords" content="コヒーレント, 会社概要, レーザー技術, 再生可能エネルギー, 宇宙デブリ" />
+          <meta name="keywords" content="コヒーレント, レーザープラズマ, 再生可能エネルギー, 宇宙デブリ, Nariaki Uchida, 内田成明, Kiyozumi Takeuchi, 竹内清澄" />
           <meta property="og:title" content="株式会社コヒーレントシステムズ - 会社概要" />
           <meta property="og:description" content="株式会社コヒーレントシステムズの会社概要、代表挨拶、研究内容などの詳細情報。" />
     </Head>
     <div className={styles.container}>
         <div className={styles.companyOverview}>
-            <h2>メンバー</h2>
+            <h1>メンバー</h1>
         </div>
       {/* Cards for CEO and CTO */}
       <div className={styles.cardsContainer}>
@@ -28,7 +28,7 @@ export default function About() {
             className={styles.cardImage}
           />
           <p>代表取締役 CEO</p>
-          <h2>竹内 清澄 (Kiyosumi Takeuchi)</h2>
+          <h2>竹内 清澄 (Kiyozumi Takeuchi)</h2>
           <p>慶応義塾大学 経済学部卒 プライム上場企業のマーケティング部長、
             執行役員(営業部長)等を歴任後2020年7月に知財マーケティングの事業化のために起業。
             2022年4月大阪大学と共同研究を開始。

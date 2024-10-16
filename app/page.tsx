@@ -7,8 +7,6 @@ const HomePage = () => {
     <>
     <Head>
       <title>株式会社コヒーレントシステムズ</title>
-        <meta name="description" content="株式会社コヒーレントシステムズの会社概要とメンバー紹介" />
-        <meta name="keywords" content="コヒーレント, 会社概要, レーザー技術, 再生可能エネルギー, 宇宙デブリ" />
         <meta name="google-site-verification" content="CLa-v1ksCnsB2B0COb76i713L164flXP3O4gVO2P93Q" />
     </Head>
     <div>

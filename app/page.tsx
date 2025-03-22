@@ -7,7 +7,7 @@ const HomePage = () => {
     <>
     <Head>
       <title>株式会社コヒーレントシステムズ</title>
-        <meta name="google-site-verification" content="CLa-v1ksCnsB2B0COb76i713L164flXP3O4gVO2P93Q" />
+      <meta name="google-site-verification" content="YnlGmTyEYBOZ4T2ejfQ7Bq40LxdERdvb3jzn0VwJN14" />
     </Head>
     <div>
       <ImageWithText />

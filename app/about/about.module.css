@@ -82,7 +82,7 @@
   font-size: 1.6rem; /* フォントサイズを大きく */
   font-weight: bold; /* 太字に */
   color: #000044; /* テキストカラーを設定 */
-  letter-spacing: 1px; /* 文字間隔を広げる */
+  letter-spacing: 0px; /* 文字間隔を広げる */
   text-align: center; /* 中央寄せ */
   text-transform: uppercase; /* 大文字に */
   margin-bottom: 1px;
@@ -107,7 +107,7 @@
   font-size: 1.6rem; /* フォントサイズを大きく */
   font-weight: bold; /* 太字に */
   color: #000044; /* テキストカラーを設定 */
-  letter-spacing: 1px; /* 文字間隔を広げる */
+  letter-spacing: 0px; /* 文字間隔を広げる */
   text-align: center; /* 中央寄せ */
   text-transform: uppercase; /* 大文字に */
   margin-bottom: 60px;

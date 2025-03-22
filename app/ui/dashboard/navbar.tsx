@@ -31,16 +31,20 @@ const Navbar = () => {
             <ul className={"hidden md:flex gap-x-6"}>
               <li><Link href="/"><p className={Styles.aboutLink}>Home</p></Link></li>
               <li><Link href="/about"><p className={Styles.aboutLink}>About Us</p></Link></li>
-              <li><Link href="/papers"><p className={Styles.aboutLink}>Paper</p></Link></li>
+              <li><Link href="/papers"><p className={Styles.aboutLink}>Research</p></Link></li>
             </ul>
 
             {/* Mobile Menu */}
             {isOpen && (
-              <div className={"absolute top-full right-0 bg-gray-800 text-white mt-2 p-4 rounded-lg shadow-lg w-48 transition-all duration-300"}>
+              <div
+                className={`absolute top-full right-0 ${
+                  isHome ? "bg-black text-white" : "bg-gray-800 text-white"
+                } mt-2 p-4 rounded-lg shadow-lg w-48 transition-all duration-300`}
+              >
                 <ul className="flex flex-col space-y-2 items-center">
                   <li><Link href="/" onClick={() => setIsOpen(false)}><p className={Styles.aboutLink}>Home</p></Link></li>
                   <li><Link href="/about" onClick={() => setIsOpen(false)}><p className={Styles.aboutLink}>About Us</p></Link></li>
-                  <li><Link href="/papers" onClick={() => setIsOpen(false)}><p className={Styles.aboutLink}>Paper</p></Link></li>
+                  <li><Link href="/papers" onClick={() => setIsOpen(false)}><p className={Styles.aboutLink}>Research</p></Link></li>
                 </ul>
               </div>
             )}

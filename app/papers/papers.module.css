@@ -1,45 +1,123 @@
-import Head from 'next/head';
-import styles from './papers.module.css';
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+   
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .container h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 
-export default function Paper() {
-  const papers = [
-    { title: 'Feasibility Study of Spaceborne Pulsed Laser System...', link: '/papers/AMOS_Uchida_240830.pdf' },
-    // { title: 'Paper_2_Title', link: '/papers/Another_Paper.pdf' },
-    // { title: 'Paper_3_Title', link: '/papers/Third_Paper.pdf' },
-  ];
+  .library {
+    display: flex;
+    flex-direction: row; /* 横並びに配置 */
+    align-items: center;  /* 垂直方向に中央揃え */
+    gap: 40px;  /* アイテム間に一定のスペースを追加 */
+    margin-bottom: 10px;   /* リストの間に余白を追加 */
+  }
+  
+  .link {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .link:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  /* .link span {
+    margin-right: 10px;
+  } */
 
-  return (
-    <div className={styles.container}>
-      <div className={styles.researchOverview}>
-        <h1 className={styles.title}>Our Research Papers</h1>
-        <table className={styles.table}>
-          <thead>
-            <tr>
-              <th>Index</th>
-              <th>Title</th>
-              <th>Link</th>
-            </tr>
-          </thead>
-          <tbody>
-            {papers.map((paper, index) => (
-              <tr key={index}>
-                <td>{index + 1}</td> {/* インデックス */}
-                <td>{paper.title}</td> {/* タイトル */}
-                <td>
-                  <a
-                    href={paper.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.link}
-                  >
-                    <span>Read</span>
-                  </a>
-                </td> {/* ボタン */}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
-  );
-}
+.researchOverview {
+    width: 100%;
+    max-width: 800px; /* 幅を調整 */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  }
+  
+.researchOverview h1 {
+    font-family: 'Roboto', sans-serif; /* フォントをモダンに */
+    font-size: 1.6rem; /* フォントサイズを大きく */
+    font-weight: bold; /* 太字に */
+    color: #000044; /* テキストカラーを設定 */
+    letter-spacing: 0px; /* 文字間隔を広げる */
+    text-align: center; /* 中央寄せ */
+    text-transform: uppercase; /* 大文字に */
+    margin-bottom: 50px;
+    position: relative; /* 下線のアニメーション用 */
+  }
+  
+.researchOverview h1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px; /* 下線の高さ */
+    background-color: #000044; /* 下線の色 */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    animation: underlineAnimation 0.6s ease-out forwards;
+  }
+
+@keyframes underlineAnimation {
+    to {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+  }
+
+  /* テーブル全体のスタイル */
+.table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse; /* セル間の隙間をなくす */
+    margin: 20px auto;
+  }
+  
+  .table th, .table td {
+    padding: 12px;
+    text-align: center; /* 中央揃え */
+    border: 1px solid #ddd; /* セルの境界線 */
+  }
+  
+  .table th {
+    background-color: #f4f4f4;
+    font-size: 1.2rem;
+  }
+  
+  .table td {
+    font-size: 1rem;
+  }

@@ -16,10 +16,10 @@
   background-color: #f9f9f9;
   padding: 20px;
   width: 45%;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 /* Mobile responsiveness */
@@ -34,12 +34,20 @@
   }
 }
 
+.card h1 {
+  font-family: 'Roboto', sans-serif; /* フォントをモダンに */
+  margin-top: 3px;
+  font-size: 1.4rem;
+}
+
 .card h2 {
-  margin-top: 10px;
-  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif; /* フォントをモダンに */
+  margin-top: 1px;
+  font-size: 1.0rem;
 }
 
 .card p {
+  font-family: 'Roboto', sans-serif; /* フォントをモダンに */
   margin-top: 10px;
   font-size: 1rem;
   color: #666;
@@ -69,25 +77,87 @@
   /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
 }
 
-.companyOverview h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #333;
+.companyOverview h1 {
+  font-family: 'Roboto', sans-serif; /* フォントをモダンに */
+  font-size: 1.6rem; /* フォントサイズを大きく */
+  font-weight: bold; /* 太字に */
+  color: #000044; /* テキストカラーを設定 */
+  letter-spacing: 1px; /* 文字間隔を広げる */
+  text-align: center; /* 中央寄せ */
+  text-transform: uppercase; /* 大文字に */
+  margin-bottom: 1px;
+  position: relative; /* 下線のアニメーション用 */
 }
 
-.companyOverview h1 {
-  font-size: 1.8rem;
-  margin-bottom: 1px;
-  color: #333;
+.companyOverview h1::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px; /* 下線の高さ */
+  background-color: #000044; /* 下線の色 */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  animation: underlineAnimation 0.6s ease-out forwards;
+}
+
+.companyOverview h2 {
+  font-family: 'Roboto', sans-serif; /* フォントをモダンに */
+  font-size: 1.6rem; /* フォントサイズを大きく */
+  font-weight: bold; /* 太字に */
+  color: #000044; /* テキストカラーを設定 */
+  letter-spacing: 1px; /* 文字間隔を広げる */
+  text-align: center; /* 中央寄せ */
+  text-transform: uppercase; /* 大文字に */
+  margin-bottom: 60px;
+  position: relative; /* 下線のアニメーション用 */
+}
+
+.companyOverview h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px; /* 下線の高さ */
+  background-color: #000044; /* 下線の色 */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  animation: underlineAnimation 0.6s ease-out forwards;
+}
+
+@keyframes underlineAnimation {
+  to {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+  }
+}
+
+.companyOverview p {
+  font-family: 'Roboto', sans-serif; /* フォントをモダンに */
+  font-size: 1.1rem;
 }
 
 .section {
   display: flex;
   justify-content: center; /* セクションを中央に配置 */
-  margin: 20px 0;
-  padding-bottom: 20px;
+  margin: 5px 0;
+  padding-bottom: 5px;
   border-bottom: 1px solid #ddd; /* 各セクションを線で区切る */
   width: 100%; /* 幅を100%に */
+}
+
+.section p {
+  font-family: 'Roboto', sans-serif; /* フォントを統一 */
+  font-size: 1.0rem;
+  line-height: 1.4;
+  color: #333;
+  text-align: justify; /* 両端揃え */
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
 }
 
 .section:last-child {
@@ -95,6 +165,7 @@
 }
 
 .title {
+  font-family: 'Roboto', sans-serif; /* フォントをモダンに */
   flex: 1; /* タイトルカラムを細くする */
   text-align: left; /* タイトルを右寄せ */
   padding-right: 10px; /* タイトルと内容の間に余白を追加 */
@@ -111,6 +182,7 @@
 }
 
 .signature {
+  font-family: 'Roboto', sans-serif; /* フォントをモダンに */
   text-align: right;
   width: 100%; /* 幅を100%に設定 */
   margin-left: auto; /* 自動で左側のマージンを取る */

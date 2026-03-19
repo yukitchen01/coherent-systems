@@ -3,8 +3,9 @@ import styles from './papers.module.css';
 
 export default function Paper() {
   const papers = [
+    { title: 'The Elements of Small Debris Mitigation System...', link: 'papers/Uchida et al. - 2023 - The Elements of Small Debris Mitigation System Using Spaceborne Laser.pdf' },
     { title: 'Feasibility Study of Spaceborne Pulsed Laser System...', link: '/papers/AMOS_Uchida_240830.pdf' },
-    // { title: 'Paper_2_Title', link: '/papers/Another_Paper.pdf' },
+    // { title: 'Paper_3_Title', link: '/papers/Third_Paper.pdf' },
     // { title: 'Paper_3_Title', link: '/papers/Third_Paper.pdf' },
   ];
 

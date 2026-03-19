@@ -3,10 +3,10 @@ import styles from './papers.module.css';
 
 export default function Paper() {
   const papers = [
-    { title: 'The Elements of Small Debris Mitigation System...', link: 'papers/Uchida et al. - 2023 - The Elements of Small Debris Mitigation System Using Spaceborne Laser.pdf' },
-    { title: 'Feasibility Study of Spaceborne Pulsed Laser System...', link: '/papers/AMOS_Uchida_240830.pdf' },
-    { title: 'Precise Orbit Prediction of Space Debris...', link: '/papers/Shibata と Uchida - 2024 - Precise Orbit Prediction of Space Debris and Appropriate Direction of Ablation Recoil.pdf' },
-    // { title: 'Paper_3_Title', link: '/papers/Third_Paper.pdf' },
+    { title: 'The Elements of Small Debris Mitigation System Using Spaceborne Laser', link: 'papers/Uchida et al. - 2023 - The Elements of Small Debris Mitigation System Using Spaceborne Laser.pdf' },
+    { title: 'Feasibility Study of Spaceborne Pulsed Laser System Removing Small Debris Objects in Near-Earth Orbits', link: '/papers/AMOS_Uchida_240830.pdf' },
+    { title: 'Precise Orbit Prediction of Space Debris and Appropriate Direction of Ablation Recoil', link: '/papers/Shibata と Uchida - 2024 - Precise Orbit Prediction of Space Debris and Appropriate Direction of Ablation Recoil.pdf' },
+    { title: 'Metal Magnesium Fuel Cycle to Make Indonesia a Leading Renewable Energy Country', link: '/papers/ICHVEPS2025Uchida.pdf' },
   ];
 
   return (

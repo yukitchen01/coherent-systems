@@ -21,7 +21,7 @@ export default function About() {
         {/* CEO Card */}
         <div className={styles.card}>
           <Image
-            src="/images/ceo.jpg" // Path to the CEO's picture
+            src="/images/ceo2.jpg" // Path to the CEO's picture
             alt="CEO"
             width={200}
             height={200}

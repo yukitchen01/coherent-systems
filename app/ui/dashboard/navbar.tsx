@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Styles from './page.module.css';
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ const Navbar = () => {
         ${isHome ? "absolute bg-transparent text-white" : "fixed bg-gray-800 text-white shadow-md"}`}>
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full relative">
-            <div className={Styles.logo}>CoherentSystems</div>
+            <div className={Styles.logo}><Image src="/public/logo.png" alt="CoherentSystems" width={80} height={80} priority/></div>
 
             {/* Hamburger Icon */}
             <div className={"md:hidden text-white"} onClick={() => setIsOpen(!isOpen)}>

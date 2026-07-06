@@ -17,8 +17,7 @@ const Navbar = () => {
         ${isHome ? "absolute bg-transparent text-white" : "fixed bg-gray-800 text-white shadow-md"}`}>
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full relative">
-            <div className={Styles.logo}><Image src="/images/logo.png" alt="CoherentSystems" width={80} height={80} priority/>
-            Coherent Systems</div>
+            <div className={Styles.logo}><Image src="/images/logo.png" alt="CoherentSystems" width={100} height={100} priority/></div>
 
             {/* Hamburger Icon */}
             <div className={"md:hidden text-white"} onClick={() => setIsOpen(!isOpen)}>

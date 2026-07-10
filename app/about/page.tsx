@@ -23,8 +23,8 @@ export default function About() {
           <Image
             src="/images/ceo2.jpg" // Path to the CEO's picture
             alt="CEO"
-            width={200}
-            height={200}
+            width={300}
+            height={300}
             className={styles.cardImage}
           />
           <p>代表取締役 CEO</p>
@@ -34,7 +34,7 @@ export default function About() {
             執行役員(営業部長)等を歴任後2020年7月に知財マーケティングの事業化のために起業。
             2022年4月大阪大学と共同研究を開始。
             大学内にレーザープラズマ応用研究所(産学共創A棟501号室)を開所。
-            2024年8月より国際戦略経営研究学会会員。
+            2024年8月よりマーケティング学会会員。
           </p>
         </div>
 
@@ -43,8 +43,8 @@ export default function About() {
           <Image
             src="/images/cto.jpg" // Path to the CTO's picture
             alt="CTO"
-            width={200}
-            height={200}
+            width={300}
+            height={300}
             className={styles.cardImage}
           />
           <p>取締役 CTO</p>

@@ -2,6 +2,7 @@ import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
 import Navbar from '@/app/ui/dashboard/navbar';
 import Footer from '@/app/ui/dashboard/footer';
+import Image from 'next/image';
 
 
 export default function RootLayout({
@@ -13,6 +14,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>株式会社コヒーレントシステムズ</title>
+        <link rel="icon" href="/images/logo.png" sizes="16x16">
         <meta name="google-site-verification" content="YnlGmTyEYBOZ4T2ejfQ7Bq40LxdERdvb3jzn0VwJN14" />
       </head>
       <body className={`${inter.className} antialiased`}>
